@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   get 'articles/show'
   root 'home#index'
 
-  resources :articles, only: [:show, :index]
+  resources :articles, only: %i[show index]
   # BEGIN
-  
+
   # END
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
